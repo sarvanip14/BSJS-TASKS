@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>BS Task3</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <style>
+      body {
+        width: 100%;
+      }
+
+      #header {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 80px;
+        background: whitesmoke;
+        box-shadow: 0 5px 15px rgba(red, green, blue, alpha) (0, 0, 0, 0.06);
+        z-index: 999;
+        position: sticky;
+        top: 0;
+        left: 0;
+      }
+
+      #navbar {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      #navbar li {
+        list-style: none;
+        padding: 0 20px;
+        position: relative;
+      }
+
+      #navbar li a {
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 600;
+        color: #1a1a1a;
+        transition: 0.3s ease;
+      }
+
+      #navbar li a:hover,
+      #navbar li a.active {
+        color: skyblue;
+      }
+
+      #navbar li a.active::after,
+      #navbar li a:hover::after {
+        content: "";
+        width: 30%;
+        height: 2px;
+        background: skyblue;
+        position: absolute;
+        bottom: -4px;
+        left: 20px;
+      }
+      .text {
+        text-align: center;
+        margin-left: 500px;
+        margin-right: 550px;
+      }
+      .heading {
+        text-align: center;
+        font-size: 50px;
+      }
+      .card-title {
+        background-color: whitesmoke;
+        position: relative;
+      }
+      footer{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+footer .col{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-bottom: 20px;
+}
+
+footer .logo{
+  margin-bottom: 30px;
+}
+
+footer h4{
+  font-size: 40px;
+  padding-bottom: 20px;
+}
+
+footer p{
+  font-size: 13px;
+  margin: 0 0 8px 0;
+}
+
+footer a{
+  font-size: 13px;
+  text-decoration: none;
+  color: #222;
+  margin-bottom: 10px;
+}
+
+footer .follow i{
+  color: #465b52;
+  padding-right: 4px;
+  cursor: pointer;
+}
+
+footer .install .row img{
+  border: 1px solid #088178;
+  border-radius: 6px;
+}
+footer .install img{
+  margin: 10px 0 15px 0;
+}
+
+footer .follow i:hover{
+  color:#088178;
+}
+
+footer a:hover{
+  color:#088178;
+
+}
+
+footer .copyright{
+  width:100%;
+  text-align: center;
+}
+
+    </style>
+  </head>
+  <body>
+    <h1>Bootstrap Task3</h1>
+    <section id="header">
+      <a><h6>Company Name</h6></a>
+      <div>
+        <ul id="navbar">
+          <li><a href="Features.html">Features</a></li>
+          <li><a href="enterprise.html">Enterprise</a></li>
+          <li><a href="Support.html">Support</a></li>
+          <li><a href="Pricing.html">Pricing</a></li>
+          <li><a class="active" href="signup.html">Sign Up</a></li>
+        </ul>
+      </div>
+    </section>
+    <div class="body">
+      <p class="heading">Pricing</p>
+      <p class="text">
+        Quickly build an effective pricing tablr for your potential customers
+        with this bootstrap example. It's buils with default Bootstrap
+        components and utilizes with little customization
+      </p>
+    </div>
+    <div>
+      <div class="container">
+        <div class="row">
+          <div class="col-sm">
+            <div class="card text-center" style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">Free</h5>
+                <h1>$0 / mo</h1>
+                <p class="card-text">10 users included</p>
+                <p>2 GB of storage</p>
+                <p>Email Support</p>
+                <p>Help center access</p>
+                <a href="#" class="btn btn-primary">Sign Up for free</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card text-center" style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">Pro</h5>
+                <h1>$15 / mo</h1>
+                <p class="card-text">20 users included</p>
+                <p>10 GB of storage</p>
+                <p>Priority Email Support</p>
+                <p>Help center access</p>
+                <a href="#" class="btn btn-primary">Get started</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm">
+            <div class="card text-center" style="width: 18rem">
+              <div class="card-body">
+                <h5 class="card-title">Enterprise</h5>
+                <h1>$29 / mo</h1>
+                <p class="card-text">30 users included</p>
+                <p>15 GB of storage</p>
+                <p>Phone and Email Support</p>
+                <p>Help center access</p>
+                <a href="#" class="btn btn-primary">Contact Us</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="section-p1">
+        <div class="col">
+            <img class="logo" src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Bootstrap_logo.svg/800px-Bootstrap_logo.svg.png" alt="" heigth="25%" width="25%"/>
+            <small>&copy; 2017</small>
+        </div>
+        <div class="col">
+            <h4>Features</h4>
+            <a href="#">Cool stuff</a>
+            <a href="#">Random feature</a>
+            <a href="#">Team feature</a>
+            <a href="#">Stuff for developers</a>
+            <a href="#">Another one</a>
+            <a href="#">Last time</a>
+
+        </div>
+
+        <div class="col">
+            <h4>Resources</h4>
+            <a href="#">Resource</a>
+            <a href="#">Resource name</a>
+            <a href="#">Another resource</a>
+            <a href="#">Final resource</a>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">Team</a>
+            <a href="#">Locations</a>
+            <a href="#">Privacy</a>
+            <a href="#">Terms</a>
+        </div>
+  </body>
+</html>
